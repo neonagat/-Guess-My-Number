@@ -39,7 +39,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // When guess is wrong
   } else if (guess !== secretNumber) {
     if (score > 1) {
-      displayMessage(guess > secretNumber ? '📈 To height!' : '📉 To low!');
+      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -48,10 +48,10 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 
-  //     // When number too height
+  //     // When number too high
   //   } else if (guess > secretNumber) {
   //     if (score > 1) {
-  //       document.querySelector('.message').textContent = '📈 To height!';
+  //       document.querySelector('.message').textContent = '📈 Too high!';
   //       score--;
   //       document.querySelector('.score').textContent = score;
   //     } else {
@@ -62,7 +62,7 @@ document.querySelector('.check').addEventListener('click', function () {
   //     // When number too low
   //   } else if (guess < secretNumber) {
   //     if (score > 1) {
-  //       document.querySelector('.message').textContent = '📉 To low!';
+  //       document.querySelector('.message').textContent = '📉 Too low!';
   //       score--;
   //       document.querySelector('.score').textContent = score;
   //     } else {
